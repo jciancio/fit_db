@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'active_scaffold'
+gem 'quiet_assets'
+gem 'jquery-ui-rails'
 
 gem 'rails', '4.2.7.1'
 gem 'pg', '~> 0.15'
