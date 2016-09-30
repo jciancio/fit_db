@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # concern :active_scaffold_association, ActiveScaffold::Routing::Association.new
-  # concern :active_scaffold, ActiveScaffold::Routing::Basic.new(association: true)
+  root 'users#index'
+
   resources :users do as_routes end
 
   namespace :api do
@@ -8,4 +8,6 @@ Rails.application.routes.draw do
       resources :users
     end
   end
+  # concern :active_scaffold_association, ActiveScaffold::Routing::Association.new
+  # concern :active_scaffold, ActiveScaffold::Routing::Basic.new(association: true)
 end
